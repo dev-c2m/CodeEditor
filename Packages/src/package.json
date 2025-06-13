@@ -1,0 +1,37 @@
+{
+  "name": "com.c2m.code-editor",
+  "version": "1.0.0",
+  "displayName": "Code Editor",
+  "description": "Requires TextMesh Pro\n\n",
+  "unity": "2021.3",
+  "unityRelease": "52f1",
+  "documentationUrl": "https://github.com/dev-c2m/CodeEditor/blob/main/Packages/src/README.md",
+  "changelogUrl": "https://github.com/dev-c2m/CodeEditor/blob/main/Packages/src/CHANGELOG.md",
+  "licensesUrl": "https://github.com/dev-c2m/CodeEditor/blob/main/LICENSE",
+  "dependencies": {
+    "com.unity.inputsystem": "1.14.0",
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Samples",
+      "description": "A sample scene.",
+      "path": "Samples~"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-c2m/CodeEditor"
+  },
+  "author": {
+    "name": "c2m",
+    "email": "cmgameg@gmail.com",
+    "url": "https://github.com/dev-c2m"
+  },
+  "keywords": [
+    "tool",
+    "editor",
+    "utility"
+  ]
+}

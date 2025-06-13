@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca40a151f9eada4883c6ce4c5b706e9, type: 3}
+  m_Name: Language Setting-C#
+  m_EditorClassIdentifier: 
+  keywords: abstract, add, alias, as, ascending, async, await, base, bool, break,
+    by, byte, case, catch, char, checked, class, const, continue, decimal, default,
+    delegate, descending, do, double, dynamic, else, enum, equals, event, explicit,
+    extern, false, finally, fixed, float, for, foreach, from, get, global, goto,
+    group, if, implicit, in, init, int, interface, internal, into, is, join, let,
+    lock, long, nameof, namespace, new, nint, notnull, nuint, null, object, on, operator,
+    orderby, out, override, params, partial, private, protected, public, readonly,
+    ref, remove, required, return, sbyte, scoped, sealed, select, set, short, sizeof,
+    stackalloc, static, string, struct, switch, this, throw, true, try, typeof, uint,
+    ulong, unchecked, unmanaged, unsafe, ushort, using, value, var, virtual, void,
+    volatile, when, where, while, with, yield
+  keywordColor: {r: 0.27058825, g: 0.3254902, b: 1, a: 1}
+  subKeywords:
+  - MainKeyword: Test
+    SubKeyword: sub1, sub2, sub3
+  symbol: '{, }, [, ], (, ), ., ,, ;, :, +, -, *, /, %, &, |, ^, !, ~, =, <, >, ?,
+    ??, ::, =>, ++, --, &&, ||, ==, !=, <=, >=, +=, -=, *=, /=, %=, &=, |=, ^=, <<,
+    >>, >>>, <<=, >>=, >>>=, ->, ?., ?[], ??=, .., $, @, #, !'
+  symbolColor: {r: 0.63529414, g: 0.60784316, b: 1, a: 1}
+  lineComment: //
+  multiLineCommentStart: /*
+  multiLineCommentEnd: '*/'
+  commentColor: {r: 0.38039216, g: 0.81960785, b: 0, a: 1}
+  autoIndentLanguage: 0
+  indentType: 0
+  autoIndentChars: '{, ('
+  autoUnIndentChars: '}, )'
