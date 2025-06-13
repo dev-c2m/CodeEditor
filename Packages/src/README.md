@@ -4,7 +4,7 @@
 ![alt text](https://img.shields.io/badge/Unity-6000.0%2B-blue.svg?logo=unity)  
 ![alt text](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-[Description](#-description-) | [Features](#-features-) | [Installation](#-installation-) | [Usage](#-usage-) | [Contributing](#-contributing-)
+[Description](#description) | [Features](#features) | [Installation](#installation) | [Usage](#usage) | [Contributing](#contributing)
 
 ## Description
 This is a versatile in-game code editor that can be used for various purposes.  
@@ -26,7 +26,7 @@ _This package requires **TextMeshPro**._
 ### Install via UPM (Unity Package Manager)
 - Click `Window > Package Manager` to open Package Manager UI.
 - Click `+ > Install(or Add) package from git URL...` and input the repository URL: `https://github.com/dev-c2m/CodeEditor.git?path=Packages/src`  
-![Install](https://github.com/user-attachments/assets/94973329-6cb6-41ef-b044-484e86b6e651)
+![Image](https://github.com/user-attachments/assets/d1fd3692-b6b2-44e7-98b2-d2e9c4230cf0)
 - To update the package, change suffix `#{version}` to the target version.
     - e.g. `https://github.com/dev-c2m/CodeEditor.git?path=Packages/src#1.0.0`
 
@@ -34,7 +34,7 @@ _This package requires **TextMeshPro**._
 ### Getting Started
 1. [Install the package.](#-installation-)
 2. Download sample  
-![Sample](https://github.com/user-attachments/assets/bbafa5e8-160d-44f9-9a95-06b0cbd94dda)
+   ![sample](https://github.com/user-attachments/assets/dc1feba9-f16e-44a4-9f7b-bd2f9545fb34)
 3. Drag and Drop prefab in Scene
 
 **``We recommend downloading the sample and using the included prefab.``**
@@ -43,7 +43,7 @@ _This package requires **TextMeshPro**._
 ### Language  
 **Creating the Language Setting**  
 `Asset - Create - Code Editor - Language Setting`  
-![Image](https://github.com/user-attachments/assets/478c16de-7a47-4e99-bc1f-1535164f57ca)  
+![language](https://github.com/user-attachments/assets/035b5058-80a7-4b43-82a1-e443450c5a14) 
 -   **Keywords**: The list of keywords for autocompletion and syntax highlighting.
 -   **Keyword Color**: The color used to highlight the keywords.
 -   **Sub Keywords**: Sub-keywords that belong to a main keyword. These are often static members or properties that appear after a main keyword (e.g., `Vector3.zero`).
@@ -59,7 +59,7 @@ _This package requires **TextMeshPro**._
 
 
 ### Code Editor  
-![Image](https://github.com/user-attachments/assets/2a026c24-8736-4867-b339-6b270f43a345)  
+![codeeditor](https://github.com/user-attachments/assets/6dc23713-4f2b-4294-8b01-41d8d1fbc93b)  
 **Code Editor Setting**  
 - **Language Setting**: The language setting asset created above.
 - **undoIdleThresholdSeconds**: If there is no input for this duration (in seconds), the changes are recorded for the undo history.
@@ -67,7 +67,7 @@ _This package requires **TextMeshPro**._
 
 
 ### Auto Complete  
-![Image](https://github.com/user-attachments/assets/da56277a-4a8c-4569-a5a8-edb387a49117)
+![auto](https://github.com/user-attachments/assets/44576e63-92bd-448a-8d2e-2ed6849198ed)
 - **Language Setting**: The language setting asset created above.
 - **Max Suggestions**: Specifies the maximum number of auto-complete suggestions. (-1 means no limit).
 - **Code Complete Default Color**: The background color for suggested auto-complete keywords.
@@ -88,4 +88,3 @@ Coming soon.
 ## License
 
 MIT
-# CodeEditor
