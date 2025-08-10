@@ -361,9 +361,6 @@ namespace C2M.CodeEditor
 
         private void ProcessCodeComplete(string text)
         {
-            if (isRemoved)
-                return;
-
             Vector3 caretWorldPosition = GetCaretWorldPosition();
             codeAutoComplete.UpdateCompletePosition(caretWorldPosition);
             codeAutoComplete.UpdateSuggestions(text, caretPosition);
