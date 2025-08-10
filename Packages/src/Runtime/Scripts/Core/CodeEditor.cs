@@ -289,7 +289,6 @@ namespace C2M.CodeEditor
             {
                 isPaste = false;
                 onValueChanged.Invoke(text);
-                verticalScrollbar.value = 1f;
                 ProcessRemoved();
             }
         }
@@ -355,7 +354,7 @@ namespace C2M.CodeEditor
                 textComponent.rectTransform.anchoredPosition = new Vector2(anchoredX, textComponent.rectTransform.anchoredPosition.y);
 
                 AssignPositioningByMainTextComponent(highlightText.rectTransform);
-                AssignPositioningByMainTextComponent(caretRectTransform);
+                AssignPositioningByMainTextComponent(caretRectTransform);                
                 UpdateLineTextRect();
                 NextFrameProcess();
             }
