@@ -1,8 +1,8 @@
 {
   "name": "com.c2m.code-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Code Editor",
-  "description": "Requires TextMesh Pro\n\n",
+  "description": "Requires TextMesh Pro",
   "unity": "2021.3",
   "unityRelease": "52f1",
   "documentationUrl": "https://github.com/dev-c2m/CodeEditor/blob/main/Packages/src/README.md",
