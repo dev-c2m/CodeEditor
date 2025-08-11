@@ -1,6 +1,6 @@
 {
   "name": "com.c2m.code-editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "Code Editor",
   "description": "Requires TextMesh Pro",
   "unity": "2021.3",
