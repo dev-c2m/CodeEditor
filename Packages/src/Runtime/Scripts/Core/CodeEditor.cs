@@ -146,7 +146,7 @@ namespace C2M.CodeEditor
                 Redo();
             }
 
-            if (inputActionsManager.IsInputEnter)
+            if (inputActionsManager.IsInputEnter && !codeAutoComplete.IsShow)
             {
                 autoIndent.GetAutoIndentText(text, caretPosition);
             }
@@ -210,10 +210,7 @@ namespace C2M.CodeEditor
             if (inputActionsManager.IsInputPaste)
                 return;
 
-            if (!string.IsNullOrEmpty(newText))
-            {
-                newText = newText.Replace("\r\n", "\n").Replace('\r', '\n');
-            }
+            newText = ReplaceLineSymbol(newText);
 
             if (string.IsNullOrEmpty(newText))
             {
@@ -364,7 +361,7 @@ namespace C2M.CodeEditor
 
         private void ProcessCodeComplete(string text)
         {
-            if (isRemoved)
+            if (isRemoved && !codeAutoComplete.IsShow)
                 return;
 
             Vector3 caretWorldPosition = GetCaretWorldPosition();
@@ -384,6 +381,16 @@ namespace C2M.CodeEditor
             float size = viewportRect.width / textComponent.preferredWidth;
 
             horizontalScrollBar.size = size;
+        }
+
+        private string ReplaceLineSymbol(string target)
+        {
+            if (!string.IsNullOrEmpty(target))
+            {
+               return target.Replace("\r\n", "\n").Replace('\r', '\n');
+            }
+
+            return target;
         }
 
         private void UpdateLineTextRect()
@@ -560,6 +567,7 @@ namespace C2M.CodeEditor
         private void UpdateText(string text, bool isSelectionAndInputKey)
         {
             int preUpdateTextStringPosition = stringPosition;
+            text = ReplaceLineSymbol(text);
 
             this.text = text;
             prevText = text;
